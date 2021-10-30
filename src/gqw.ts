@@ -1,5 +1,6 @@
 import { Octokit } from "@octokit/rest";
 import { queryUser, queryEmail, queryRepo } from "./queries";
+import fetch from 'node-fetch';
 
 export class GQW {
   private readonly octokit: Octokit;
@@ -13,4 +14,14 @@ export class GQW {
       userAgent: "https://github.com/heybereket/gqw",
     });
   }
+
+  /**
+	 * Fetch data from GitHub API
+	 * @param path The path to the API endpoint
+	 */
+	public async fetch<T>(endpoint: string): Promise<T> {
+		return fetch(`https://api.github.com/${endpoint}`, {
+			
+		}).then(async (res: Response) => res.json() as Promise<T>);
+	}
 }
