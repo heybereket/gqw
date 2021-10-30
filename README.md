@@ -1,2 +1,2 @@
-# ghud
-🏷️ Query GitHub users with certain fields
+# gqw
+🏷️ Type-safe Github API Wrapper
