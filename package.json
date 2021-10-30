@@ -1,4 +1,6 @@
 {
+  "name": "gqw",
+  "description": "🏷️ Type-safe Github API Wrapper",
   "scripts": {
     "dev": "ts-node-dev --transpile-only ./examples/basic/src/index.ts"
   },

@@ -11,8 +11,20 @@ export class GQW {
   }
 
   /**
+   * Query user by username
+   * @param user Username of account (ex. heybereket)
+   */
+  async queryUser(user: string) {
+    const { data } = await this.octokit.search.users({
+      q: `${user} in:name`,
+    });
+
+    return data.items[0];
+  }
+
+  /**
    * Query users by email
-   * @param email User Email (ex. johndoe@gmail.com)
+   * @param email User Email (ex. bereket@gmail.com)
    */
   async queryEmail(email: string) {
     const { data } = await this.octokit.search.users({
@@ -24,7 +36,7 @@ export class GQW {
 
   /**
    * Query repository by name
-   * @param repo Repository name (ex. facebook/react)
+   * @param repo Repository name (ex. heybereket/gqw)
    */
   async queryRepo(repo: string) {
     const parsed = repo.split("/");
