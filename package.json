@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "dev": "ts-node-dev --transpile-only ./examples/basic/index.ts"
+    "dev": "ts-node-dev --transpile-only ./examples/basic/src/index.ts"
   },
   "dependencies": {
     "@octokit/rest": "^18.12.0",

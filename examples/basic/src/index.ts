@@ -1,4 +1,4 @@
-import { GQW } from "../../src/gqw";
+import { GQW } from "../../../src/gqw";
 
 const client = new GQW(process.env.GITHUB_TOKEN);
 
