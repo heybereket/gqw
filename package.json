@@ -1,9 +1,13 @@
 {
   "name": "gqw",
   "description": "🏷️ Type-safe Github API Wrapper",
-  "version": "0.0.1",
+  "version": "0.0.2",
+  "scripts": {
+    "build": "tsup src --minify"
+  },
   "dependencies": {
     "@octokit/rest": "^18.12.0",
+    "tsup": "^5.5.0",
     "typescript": "^4.4.4"
   },
   "devDependencies": {
