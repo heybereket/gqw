@@ -25,7 +25,7 @@ const client = new GQW(process.env.GITHUB_TOKEN!);
   console.log(await client.queryRepo("facebook/react"));
 
   // Directly fetch Github endpoint
-  console.log(await client.fetch("users/heybereket"));
+  console.log(await client.get("users/heybereket"));
 })();
 ```
 

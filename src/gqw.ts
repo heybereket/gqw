@@ -20,9 +20,9 @@ export class GQW {
    * Fetch data from GitHub API
    * @param path The path to the API endpoint
    */
-  public async fetch<T>(endpoint: string): Promise<T> {
+  public async get<T>(endpoint: string): Promise<T> {
     return fetch(`https://api.github.com/${endpoint}`).then(
-      async (res: Response) => res.json() as Promise<T>
+      async (res) => res.json() as Promise<T>
     );
   }
 }
