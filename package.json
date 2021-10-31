@@ -1,14 +1,14 @@
 {
   "name": "gqw",
   "description": "🏷️ Type-safe Github API Wrapper",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "scripts": {
     "build": "tsup src --minify"
   },
   "files": [
-		"dist",
-		"src"
-	],
+    "dist",
+    "src"
+  ],
   "dependencies": {
     "@octokit/rest": "^18.12.0",
     "tsup": "^5.5.0",
@@ -18,12 +18,12 @@
     "@types/node": "^16.11.6"
   },
   "keywords": [
-		"github",
+    "github",
     "api wrapper",
     "api",
     "query",
     "queries",
     "api",
     "gh"
-	]
+  ]
 }
