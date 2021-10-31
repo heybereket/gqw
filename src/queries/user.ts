@@ -9,7 +9,5 @@ export const queryUser = async (octokit: Octokit, user: string) => {
     q: `${user} in:username`,
   });
 
-  console.log(data);
-
   return data.items[0];
 };
