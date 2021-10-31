@@ -23,6 +23,9 @@ const client = new GQW(process.env.GITHUB_TOKEN!);
 
   // Get a repo name
   console.log(await client.queryRepo("facebook/react"));
+  
+  // Get a organization by name
+  console.log(await client.queryOrg("facebook"));
 
   // Directly fetch Github endpoint
   console.log(await client.get("users/heybereket"));
